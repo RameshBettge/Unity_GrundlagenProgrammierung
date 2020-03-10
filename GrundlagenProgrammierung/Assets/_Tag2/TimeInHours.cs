@@ -12,6 +12,7 @@ public class TimeInHours : MonoBehaviour
 
         print(timeInHours);
 
+
         float timeInSeconds = Time.time;
 
         float actualTimeInMinutes = timeInSeconds / 60;
