@@ -71,6 +71,11 @@
     <Compile Include="Assets\_Tag2\MyFirstFunctions.cs" />
     <Compile Include="Assets\_Tag2\PublicColor.cs" />
     <Compile Include="Assets\_Tag2\TimeInHours.cs" />
+    <Compile Include="Assets\_Tag3\PacMan\PacmanMovement.cs" />
+    <Compile Include="Assets\_Tag3\Rocket\FuelTank.cs" />
+    <Compile Include="Assets\_Tag3\Rocket\Rocket_Simple.cs" />
+    <Compile Include="Assets\_Tag3\Rocket\RocketControls.cs" />
+    <Compile Include="Assets\_Tag3\Rocket\RocketFire.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/dozent/Documents/RameshBettge/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

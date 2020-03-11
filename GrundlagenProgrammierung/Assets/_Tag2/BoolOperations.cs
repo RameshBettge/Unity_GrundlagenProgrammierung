@@ -11,6 +11,8 @@ public class BoolOperations : MonoBehaviour
         bool isGreaterThanT = (2 > 1); // true
 
         bool isFalse = !true; 
+
+        // Aufgabe:
         // Erstellt eine Funktion, die zwei Zahlen annimmt.
         // Die Funktion soll die Nummer zurück geben,
         // die größer ist.
