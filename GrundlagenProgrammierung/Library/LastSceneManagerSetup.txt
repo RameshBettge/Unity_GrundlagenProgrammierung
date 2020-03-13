@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_Tag3/Rocket/_Rocket.unity
+- path: Assets/_Tag5/Puzzle/Puzzle.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

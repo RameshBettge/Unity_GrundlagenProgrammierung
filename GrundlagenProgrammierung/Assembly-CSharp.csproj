@@ -82,6 +82,13 @@
     <Compile Include="Assets\_Tag4\ClassCommunication\MyColor.cs" />
     <Compile Include="Assets\_Tag4\ClassCommunication\MyMath.cs" />
     <Compile Include="Assets\_Tag4\PositionColor.cs" />
+    <Compile Include="Assets\_Tag5\DirectionGiver.cs" />
+    <Compile Include="Assets\_Tag5\MoveInDirection.cs" />
+    <Compile Include="Assets\_Tag5\Puzzle\BlockMover.cs" />
+    <Compile Include="Assets\_Tag5\Puzzle\BlockMover_Simple.cs" />
+    <Compile Include="Assets\_Tag5\Puzzle\MovableBlock.cs" />
+    <Compile Include="Assets\_Tag5\References\ClassMember.cs" />
+    <Compile Include="Assets\_Tag5\References\EinScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/dozent/Documents/RameshBettge/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
