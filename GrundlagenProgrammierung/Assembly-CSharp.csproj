@@ -62,33 +62,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\_Tag1\AssignRandomColor.cs" />
-    <Compile Include="Assets\_Tag1\DataTypes.cs" />
-    <Compile Include="Assets\_Tag1\Move.cs" />
-    <Compile Include="Assets\_Tag1\MyFirstScript.cs" />
-    <Compile Include="Assets\_Tag2\BoolOperations.cs" />
-    <Compile Include="Assets\_Tag2\ChangeScale.cs" />
-    <Compile Include="Assets\_Tag2\MyFirstFunctions.cs" />
-    <Compile Include="Assets\_Tag2\PublicColor.cs" />
-    <Compile Include="Assets\_Tag2\TimeInHours.cs" />
-    <Compile Include="Assets\_Tag3\PacMan\PacmanMovement.cs" />
-    <Compile Include="Assets\_Tag3\Rocket\FuelTank.cs" />
-    <Compile Include="Assets\_Tag3\Rocket\Rocket_Simple.cs" />
-    <Compile Include="Assets\_Tag3\Rocket\RocketControls.cs" />
-    <Compile Include="Assets\_Tag3\Rocket\RocketFire.cs" />
-    <Compile Include="Assets\_Tag4\ClassCommunication\ColorGiver.cs" />
-    <Compile Include="Assets\_Tag4\ClassCommunication\ColorReceiver.cs" />
-    <Compile Include="Assets\_Tag4\ClassCommunication\MathUser.cs" />
-    <Compile Include="Assets\_Tag4\ClassCommunication\MyColor.cs" />
-    <Compile Include="Assets\_Tag4\ClassCommunication\MyMath.cs" />
-    <Compile Include="Assets\_Tag4\PositionColor.cs" />
-    <Compile Include="Assets\_Tag5\DirectionGiver.cs" />
-    <Compile Include="Assets\_Tag5\MoveInDirection.cs" />
-    <Compile Include="Assets\_Tag5\Puzzle\BlockMover.cs" />
-    <Compile Include="Assets\_Tag5\Puzzle\BlockMover_Simple.cs" />
-    <Compile Include="Assets\_Tag5\Puzzle\MovableBlock.cs" />
-    <Compile Include="Assets\_Tag5\References\ClassMember.cs" />
-    <Compile Include="Assets\_Tag5\References\EinScript.cs" />
+    <Compile Include="Assets\Mario\MarioMovement.cs" />
+    <Compile Include="Assets\Woche1\_Tag1\AssignRandomColor.cs" />
+    <Compile Include="Assets\Woche1\_Tag1\DataTypes.cs" />
+    <Compile Include="Assets\Woche1\_Tag1\Move.cs" />
+    <Compile Include="Assets\Woche1\_Tag1\MyFirstScript.cs" />
+    <Compile Include="Assets\Woche1\_Tag2\BoolOperations.cs" />
+    <Compile Include="Assets\Woche1\_Tag2\ChangeScale.cs" />
+    <Compile Include="Assets\Woche1\_Tag2\MyFirstFunctions.cs" />
+    <Compile Include="Assets\Woche1\_Tag2\PublicColor.cs" />
+    <Compile Include="Assets\Woche1\_Tag2\TimeInHours.cs" />
+    <Compile Include="Assets\Woche1\_Tag3\PacMan\PacmanMovement.cs" />
+    <Compile Include="Assets\Woche1\_Tag3\Rocket\FuelTank.cs" />
+    <Compile Include="Assets\Woche1\_Tag3\Rocket\Rocket_Simple.cs" />
+    <Compile Include="Assets\Woche1\_Tag3\Rocket\RocketControls.cs" />
+    <Compile Include="Assets\Woche1\_Tag3\Rocket\RocketFire.cs" />
+    <Compile Include="Assets\Woche1\_Tag4\ClassCommunication\ColorGiver.cs" />
+    <Compile Include="Assets\Woche1\_Tag4\ClassCommunication\ColorReceiver.cs" />
+    <Compile Include="Assets\Woche1\_Tag4\ClassCommunication\MathUser.cs" />
+    <Compile Include="Assets\Woche1\_Tag4\ClassCommunication\MyColor.cs" />
+    <Compile Include="Assets\Woche1\_Tag4\ClassCommunication\MyMath.cs" />
+    <Compile Include="Assets\Woche1\_Tag4\PositionColor.cs" />
+    <Compile Include="Assets\Woche1\_Tag5\DirectionGiver.cs" />
+    <Compile Include="Assets\Woche1\_Tag5\MoveInDirection.cs" />
+    <Compile Include="Assets\Woche1\_Tag5\Puzzle\BlockMover.cs" />
+    <Compile Include="Assets\Woche1\_Tag5\Puzzle\BlockMover_Simple.cs" />
+    <Compile Include="Assets\Woche1\_Tag5\Puzzle\MovableBlock.cs" />
+    <Compile Include="Assets\Woche1\_Tag5\References\ClassMember.cs" />
+    <Compile Include="Assets\Woche1\_Tag5\References\EinScript.cs" />
+    <Compile Include="Assets\Woche1\Wiederholung.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/dozent/Documents/RameshBettge/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
