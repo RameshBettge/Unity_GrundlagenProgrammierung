@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoombaMovement : MonoBehaviour
+public class KoopaMovement : MonoBehaviour
 {
     public float obstacleCheckDistance = 0.6f;
     public float moveSpeed = 10;
@@ -27,11 +26,13 @@ public class GoombaMovement : MonoBehaviour
         GetComponent<Rigidbody>().velocity = targetVelocity;
     }
 
+
     void SetHorizontalMovement()
     {
-        bool obstacleInTheWay = Physics.Raycast(transform.position, moveDirection, obstacleCheckDistance);
+        Vector3 rayOrigin = transform.position + moveDirection * obstacleCheckDistance;
+        bool pitInTheWay = !Physics.Raycast(rayOrigin, new Vector3(0, -1, 0), groundCheckDistance);
 
-        if (obstacleInTheWay)
+        if (pitInTheWay)
         {
             moveDirection = -moveDirection;
         }
@@ -39,12 +40,11 @@ public class GoombaMovement : MonoBehaviour
         MoveInDirection(moveDirection, moveSpeed);
     }
 
+
     private void SetVerticalMovement()
     {
         isGrounded = Physics.Raycast(transform.position, new Vector3(0, -1, 0), groundCheckDistance);
 
-        //if (isGrounded == false)
-        //if (isGrounded != true)
         if (!isGrounded)
         {
             MoveInDirection(new Vector3(0, -1, 0), gravity);

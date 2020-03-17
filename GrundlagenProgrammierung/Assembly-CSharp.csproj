@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Mario\GoombaMovement.cs" />
+    <Compile Include="Assets\Mario\KoopaMovement.cs" />
     <Compile Include="Assets\Mario\MarioMovement.cs" />
     <Compile Include="Assets\Woche1\_Tag1\AssignRandomColor.cs" />
     <Compile Include="Assets\Woche1\_Tag1\DataTypes.cs" />
