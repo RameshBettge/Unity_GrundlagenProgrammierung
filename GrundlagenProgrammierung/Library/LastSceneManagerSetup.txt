@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_Tag5/Puzzle/Puzzle.unity
+- path: Assets/Mario/Mario.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

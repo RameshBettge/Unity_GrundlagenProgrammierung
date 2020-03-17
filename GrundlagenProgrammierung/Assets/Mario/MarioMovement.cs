@@ -12,22 +12,29 @@ public class MarioMovement : MonoBehaviour
     public float low_JumpVelocityDecrease = 20;
     public float high_JumpVelocityDecrease = 80;
 
-    float verticalVelocity;
+    public float groundCheckDistance = 0.5f;
+
+
+    [Header("Debug values")]
+    public float verticalVelocity;
+
+    public bool isGrounded;
 
     float horizontalInput;
 
-    Vector3 targetPosition;
+    Vector3 targetVelocity;
 
 
     void FixedUpdate()
     {
-        targetPosition = transform.position;
+        targetVelocity = new Vector3(0, 0, 0);
 
         SetHorizontalMovement();
         SetVerticalMovement();
 
-        GetComponent<Rigidbody>().MovePosition(targetPosition);
+        GetComponent<Rigidbody>().velocity = targetVelocity;
     }
+
 
     void SetHorizontalMovement()
     {
@@ -37,16 +44,20 @@ public class MarioMovement : MonoBehaviour
         MoveInDirection(horizontalMoveVector, moveDistancePerSecond);
     }
 
+
     void SetVerticalMovement()
     {
+        // Check if grounded
+        isGrounded = Physics.Raycast(transform.position, new Vector3(0, -1, 0), groundCheckDistance);
+
+        // Trigger Jump
         bool spaceIsPressedDown = Input.GetKeyDown(KeyCode.Space);
         if (spaceIsPressedDown)
         {
-            Jump();
+            TryToJump();
         }
 
-        MoveInDirection(new Vector3(0, 1, 0), verticalVelocity);
-
+        // set jumpVelocityDecrease
         float jumpVelocityDecrease = high_JumpVelocityDecrease;
         bool spaceIsPressed = Input.GetKey(KeyCode.Space);
         if (spaceIsPressed)
@@ -57,22 +68,39 @@ public class MarioMovement : MonoBehaviour
             }
         }
 
+        // apply jumpVelocityDecrease to verticalVelocity
         verticalVelocity -= jumpVelocityDecrease * Time.fixedDeltaTime;
 
+        // Clamp verticalVelocity to -maxFallSpeed in negative direction
         if (verticalVelocity < -maxFallSpeed)
         {
             verticalVelocity = -maxFallSpeed;
         }
+
+        // Clamp verticalVelocity to 0 if grounded
+        if (isGrounded)
+        {
+            if (verticalVelocity < 0)
+            {
+                verticalVelocity = 0;
+            }
+        }
+
+        // Use verticalVelocity to change targetPosition in y direction
+        MoveInDirection(new Vector3(0, 1, 0), verticalVelocity);
     }
 
-    void Jump()
+    void TryToJump()
     {
-        verticalVelocity = initialJumpVelocity;
+        if (isGrounded)
+        {
+            verticalVelocity = initialJumpVelocity;
+        }
     }
 
     void MoveInDirection(Vector3 moveVector, float speedMultiplier)
     {
-        Vector3 deltaVector = moveVector * Time.fixedDeltaTime * speedMultiplier;
-        targetPosition += deltaVector;
+        Vector3 deltaVector = moveVector * speedMultiplier;
+        targetVelocity += deltaVector;
     }
 }
