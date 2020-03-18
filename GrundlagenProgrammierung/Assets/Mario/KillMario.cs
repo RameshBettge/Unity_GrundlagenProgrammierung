@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KillMario : MonoBehaviour
 {
-    float killHeight = 0.1f;
+    float killHeight = 0.25f;
 
 
     void OnCollisionEnter(Collision collision)

@@ -66,6 +66,7 @@
     <Compile Include="Assets\Mario\KillMario.cs" />
     <Compile Include="Assets\Mario\KoopaMovement.cs" />
     <Compile Include="Assets\Mario\MarioMovement.cs" />
+    <Compile Include="Assets\Mario\PiranhaPlant.cs" />
     <Compile Include="Assets\Woche1\_Tag1\AssignRandomColor.cs" />
     <Compile Include="Assets\Woche1\_Tag1\DataTypes.cs" />
     <Compile Include="Assets\Woche1\_Tag1\Move.cs" />
@@ -95,31 +96,31 @@
     <Compile Include="Assets\Woche1\_Tag5\References\EinScript.cs" />
     <Compile Include="Assets\Woche1\Wiederholung.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/Bettge/Documents/_Lecturing/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Bettge/Documents/_Lecturing/20_03_ProgrammingBasics/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Bettge/Documents/_Lecturing/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/Bettge/Documents/_Lecturing/20_03_ProgrammingBasics/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Bettge/Documents/_Lecturing/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Bettge/Documents/_Lecturing/20_03_ProgrammingBasics/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Bettge/Documents/_Lecturing/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Bettge/Documents/_Lecturing/20_03_ProgrammingBasics/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Bettge/Documents/_Lecturing/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Bettge/Documents/_Lecturing/20_03_ProgrammingBasics/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Bettge/Documents/_Lecturing/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Bettge/Documents/_Lecturing/20_03_ProgrammingBasics/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Bettge/Documents/_Lecturing/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/Bettge/Documents/_Lecturing/20_03_ProgrammingBasics/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Bettge/Documents/_Lecturing/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Bettge/Documents/_Lecturing/20_03_ProgrammingBasics/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Bettge/Documents/_Lecturing/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Bettge/Documents/_Lecturing/20_03_ProgrammingBasics/Unity_GrundlagenProgrammierung/GrundlagenProgrammierung/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
