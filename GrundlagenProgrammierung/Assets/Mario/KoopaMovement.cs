@@ -29,21 +29,43 @@ public class KoopaMovement : MonoBehaviour
 
     void SetHorizontalMovement()
     {
-        Vector3 rayOrigin = transform.position + moveDirection * obstacleCheckDistance;
-        bool pitInTheWay = !Physics.Raycast(rayOrigin, new Vector3(0, -1, 0), groundCheckDistance);
+        bool obstacleInTheWay = Physics.Raycast(transform.position, moveDirection, obstacleCheckDistance);
 
-        if (pitInTheWay)
+        Vector3 pitRayOrigin = transform.position + moveDirection * obstacleCheckDistance;
+        bool pitInTheWay = !Physics.Raycast(pitRayOrigin, new Vector3(0, -1, 0), groundCheckDistance);
+
+
+        if (obstacleInTheWay)
         {
-            moveDirection = -moveDirection;
+            AvoidObstacle();
+        }
+
+        if (isGrounded)
+        {
+            if (pitInTheWay)
+            {
+                AvoidObstacle();
+            }
         }
 
         MoveInDirection(moveDirection, moveSpeed);
+
+        // Debugging
+        Debug.DrawRay(pitRayOrigin, Vector3.down * groundCheckDistance, Color.magenta);
+        Debug.DrawRay(transform.position, moveDirection * obstacleCheckDistance, Color.cyan);
     }
 
+    void AvoidObstacle()
+    {
+        moveDirection = -moveDirection;
+        transform.eulerAngles = transform.eulerAngles + new Vector3(0, 180, 0);
+    }
 
     private void SetVerticalMovement()
     {
         isGrounded = Physics.Raycast(transform.position, new Vector3(0, -1, 0), groundCheckDistance);
+        Debug.DrawRay(transform.position, new Vector3(0, -1, 0) * groundCheckDistance, Color.green);
+
 
         if (!isGrounded)
         {
