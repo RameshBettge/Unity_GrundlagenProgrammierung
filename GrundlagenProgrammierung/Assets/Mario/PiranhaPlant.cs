@@ -52,7 +52,7 @@ public class PiranhaPlant : MonoBehaviour
     void MoveDown()
     {
         targetHeight -= 0.01f;
-
+                                    
         bool hasReachedDownHeight = targetHeight < downHeight;
 
         if (hasReachedDownHeight)

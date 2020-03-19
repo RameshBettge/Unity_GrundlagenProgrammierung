@@ -7,7 +7,6 @@ public class PublicColor : MonoBehaviour
     public Color myColor;
 
 
-
     // Update is called once per frame
     void Update()
     {
