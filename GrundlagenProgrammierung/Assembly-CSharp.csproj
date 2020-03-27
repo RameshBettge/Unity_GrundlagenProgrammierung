@@ -67,6 +67,7 @@
     <Compile Include="Assets\Mario\KoopaMovement.cs" />
     <Compile Include="Assets\Mario\MarioMovement.cs" />
     <Compile Include="Assets\Mario\PiranhaPlant.cs" />
+    <Compile Include="Assets\PruefungTheorie\NewBehaviourScript.cs" />
     <Compile Include="Assets\PruefungTheorie\PruefungBeispiel.cs" />
     <Compile Include="Assets\PruefungTheorie\Theory.cs" />
     <Compile Include="Assets\Woche1\_Tag1\AssignRandomColor.cs" />

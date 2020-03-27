@@ -15,6 +15,8 @@ public class RocketControls : MonoBehaviour
     FuelTank tank;
     RocketFire fire;
 
+    float myFloat = 1.02f;
+
     private void Start()
     {
         tank = GetComponent<FuelTank>();
@@ -53,7 +55,6 @@ public class RocketControls : MonoBehaviour
 
             fire.isThrusting = true;
         }
-
     }
 
 

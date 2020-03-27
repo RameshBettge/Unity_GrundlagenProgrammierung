@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Mario/Mario.unity
+- path: Assets/Woche1/_Tag3/Rocket/_Rocket.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
