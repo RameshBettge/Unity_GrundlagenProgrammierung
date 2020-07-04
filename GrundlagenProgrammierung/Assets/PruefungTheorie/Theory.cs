@@ -13,7 +13,7 @@ public class Theory : MonoBehaviour
     // Eine Art von Variable ist die Ganzzahl z.B.: int meineZahl = 0;
     // Es gibt viele Arten von Variablen
 
-
+    
 
     // Variable - kann selbt zugewiesene Daten oder einen Standardwert beinhalten 
     // und wird benutzt, übersichtlicher zu arbeiten und um Daten über mehrere Methoden/Klassen hinweg
